@@ -1,36 +1,125 @@
+/* Basic Reset and Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: background 0.3s ease;
+}
+nav a:hover,
+nav a.active {
+  background: #3e3e50;
+  border-radius: 5px;
+}
+
+/* Pages */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Video Modal */
 .modal {
   display: none;
   position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
+  z-index: 100;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background: rgba(0,0,0,0.7);
-  animation: fade 0.3s ease-in-out;
+  background-color: rgba(0,0,0,0.7);
 }
-
 .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
-  padding: 1rem;
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 700px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
   position: relative;
 }
-
-.modal-content video {
+.modal video {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.close:hover {
+  color: black;
 }
 
-.close {
-  color: #333;
-  position: absolute;
-  top: 10px; right: 20px;
-  font-size: 28px;
-  font-weight: bold;
+/* Button */
+button {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #1565c0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e2f;
+  color: white;
+  margin-top: 40px;
 }
