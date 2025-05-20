@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Stop Hackers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- ✅ Link to CSS -->
 </head>
 <body>
   <header>
-    <h1>🛡️ Stop Hackers</h1>
+    <h1>Stop Hackers</h1>
     <nav>
       <ul>
         <li><a href="#" data-page="home" class="active">Home</a></li>
@@ -20,50 +19,47 @@
   </header>
 
   <main>
-    <!-- 🔒 HOME -->
     <section id="home" class="page active">
       <h2>Welcome</h2>
       <p>Learn how to stay safe online and stop scammers in their tracks.</p>
     </section>
 
-    <!-- 👤 ABOUT -->
     <section id="about" class="page">
       <h2>About Me</h2>
       <p>I'm passionate about helping people stay safe on the internet by teaching simple but powerful ways to stop hackers.</p>
     </section>
 
-    <!-- 🔗 WEBSITES -->
     <section id="websites" class="page">
       <h2>Helpful Websites</h2>
       <ul>
-        <li><a href="https://webhook-deleter.netlify.app/" target="_blank">Webhook Deleter</a> – Remove Discord webhooks.</li>
-        <li><a href="https://discohook.app/?data=eyJ2ZX..." target="_blank">Discohook Message</a> – Warn others about scams.</li>
-        <li><a href="https://www.uncoverit.org/" target="_blank">UncoverIt</a> – Find fake sites and scammers.</li>
-        <li><a href="https://haveibeenpwned.com/" target="_blank">Have I Been Pwned</a> – Check if your info has been exposed.</li>
+        <li><a href="https://webhookdeleter.com" target="_blank">Webhook Deleter</a> – Remove Discord webhooks.</li>
+        <li><a href="https://dischoook.cc" target="_blank">Dischoook Message</a> – Warn others about scams.</li>
+        <li><a href="https://uncoverit.repl.co" target="_blank">UncoverIt</a> – Find fake sites and scammers.</li>
+        <li><a href="https://haveibeenpwned.com" target="_blank">Have I Been Pwned</a> – Check if your info has been exposed.</li>
       </ul>
     </section>
 
-  <section id="videos" class="page">
-  <h2>Video Links</h2>
-  <button id="openVideo">▶️ Watch Video</button>
-</section>
+    <section id="videos" class="page">
+      <h2>Video Links</h2>
+      <button id="openVideo">🎥 Watch Video</button>
+    </section>
+  </main>
 
-<!-- 🎥 VIDEO MODAL -->
-<div id="videoModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <video controls autoplay>
-      <source src="video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <video controls>
+        <source src="yourvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
-</div>
-
 
   <footer>
-    <p>Made by Captured • Stay safe out there!</p>
+    Made by Captured • Stay safe out there!
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> <!-- ✅ Link to JS -->
 </body>
 </html>
